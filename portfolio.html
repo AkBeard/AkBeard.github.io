@@ -1,2 +1,195 @@
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="portfolio.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Artwork portfolio of The Jack" />
+  <meta name="author" content="The Jack" />
+  <title>Portfolio - The Jack</title>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="portfolio.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body class="portfolio-page">
+  <header>
+    <img src="main logo.png" alt="The Jack Logo" class="logo" />
+    <div class="site-title">Artworks by The Jack</div>
+    <div class="search-bar">
+      <form action="#" method="get" role="search">
+        <label for="site-search" class="visually-hidden">Search the site:</label>
+        <input type="search" id="site-search" name="q" placeholder="Search..." />
+      </form>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="process.html">Process</a>
+    <a href="portfolio.html" aria-current="page">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="portfolio-main">
+    <section class="boxed-section">
+      <h2>Portfolio Gallery</h2>
+      <p>
+  This gallery brings together The Jack's most expressive works — from hand-sculpted wood and fluid epoxy pours, to bold digital compositions in 3D and graphic design.
+</p>
+
+
+      <div class="table-wrapper">
+        <table class="portfolio-table">
+          <thead>
+            <tr>
+              <th>Woodworking / Epoxy</th>
+              <th>Drawing</th>
+              <th>Sewing</th>
+              <th>Painting</th>
+              <th>Digital Art</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1 -->
+            <tr>
+    <td>
+      <img src="thumb1.jpg" alt="Woodworking 1" onclick="openModal('video1.mp4', 'Wood Project 1', 'Shaping the base frame using cedar and sanding tools.')">
+      <p class="thumbnail-title">Cedar Frame</p>
+    </td>
+    <td>
+      <img src="thumb2.jpg" alt="Epoxy 1" onclick="openModal('video2.mp4', 'Epoxy Pour', 'Mixing pigments and pouring into a silicone mold.')">
+      <p class="thumbnail-title">Epoxy Pour</p>
+    </td>
+    <td>
+      <img src="thumb3.jpg" alt="3D 1" onclick="openModal('video3.mp4', '3D Skull', 'Blender sculpt of a stylized skull')">
+      <p class="thumbnail-title">3D Skull Model</p>
+    </td>
+    <td>
+      <img src="thumb4.jpg" alt="Digital 1" onclick="openModal('video4.mp4', 'Album Art', 'Designing layered cover art using Procreate.')">
+      <p class="thumbnail-title">Album Art</p>
+    </td>
+    <td>
+      <img src="thumb5.jpg" alt="Misc 1" onclick="openModal('video5.mp4', 'Custom Tool', 'Laser engraving a custom tool handle.')">
+      <p class="thumbnail-title">Custom Tool</p>
+    </td>
+  </tr>
+            <!-- Row 2 -->
+            <tr>
+    <td>
+      <img src="thumb1.jpg" alt="Woodworking 1" onclick="openModal('video1.mp4', 'Wood Project 1', 'Shaping the base frame using cedar and sanding tools.')">
+      <p class="thumbnail-title">Cedar Frame</p>
+    </td>
+    <td>
+      <img src="thumb2.jpg" alt="Epoxy 1" onclick="openModal('video2.mp4', 'Epoxy Pour', 'Mixing pigments and pouring into a silicone mold.')">
+      <p class="thumbnail-title">Epoxy Pour</p>
+    </td>
+    <td>
+      <img src="thumb3.jpg" alt="3D 1" onclick="openModal('video3.mp4', '3D Skull', 'Blender sculpt of a stylized skull')">
+      <p class="thumbnail-title">3D Skull Model</p>
+    </td>
+    <td>
+      <img src="thumb4.jpg" alt="Digital 1" onclick="openModal('video4.mp4', 'Album Art', 'Designing layered cover art using Procreate.')">
+      <p class="thumbnail-title">Album Art</p>
+    </td>
+    <td>
+      <img src="thumb5.jpg" alt="Misc 1" onclick="openModal('video5.mp4', 'Custom Tool', 'Laser engraving a custom tool handle.')">
+      <p class="thumbnail-title">Custom Tool</p>
+    </td>
+  </tr>
+            <!-- Row 3 -->
+            <tr>
+    <td>
+      <img src="thumb1.jpg" alt="Woodworking 1" onclick="openModal('video1.mp4', 'Wood Project 1', 'Shaping the base frame using cedar and sanding tools.')">
+      <p class="thumbnail-title">Cedar Frame</p>
+    </td>
+    <td>
+      <img src="thumb2.jpg" alt="Epoxy 1" onclick="openModal('video2.mp4', 'Epoxy Pour', 'Mixing pigments and pouring into a silicone mold.')">
+      <p class="thumbnail-title">Epoxy Pour</p>
+    </td>
+    <td>
+      <img src="thumb3.jpg" alt="3D 1" onclick="openModal('video3.mp4', '3D Skull', 'Blender sculpt of a stylized skull')">
+      <p class="thumbnail-title">3D Skull Model</p>
+    </td>
+    <td>
+      <img src="thumb4.jpg" alt="Digital 1" onclick="openModal('video4.mp4', 'Album Art', 'Designing layered cover art using Procreate.')">
+      <p class="thumbnail-title">Album Art</p>
+    </td>
+    <td>
+      <img src="thumb5.jpg" alt="Misc 1" onclick="openModal('video5.mp4', 'Custom Tool', 'Laser engraving a custom tool handle.')">
+      <p class="thumbnail-title">Custom Tool</p>
+    </td>
+  </tr>
+            <!-- Row 4 -->
+            <tr>
+    <td>
+      <img src="thumb1.jpg" alt="Woodworking 1" onclick="openModal('video1.mp4', 'Wood Project 1', 'Shaping the base frame using cedar and sanding tools.')">
+      <p class="thumbnail-title">Cedar Frame</p>
+    </td>
+    <td>
+      <img src="thumb2.jpg" alt="Epoxy 1" onclick="openModal('video2.mp4', 'Epoxy Pour', 'Mixing pigments and pouring into a silicone mold.')">
+      <p class="thumbnail-title">Epoxy Pour</p>
+    </td>
+    <td>
+      <img src="thumb3.jpg" alt="3D 1" onclick="openModal('video3.mp4', '3D Skull', 'Blender sculpt of a stylized skull')">
+      <p class="thumbnail-title">3D Skull Model</p>
+    </td>
+    <td>
+      <img src="thumb4.jpg" alt="Digital 1" onclick="openModal('video4.mp4', 'Album Art', 'Designing layered cover art using Procreate.')">
+      <p class="thumbnail-title">Album Art</p>
+    </td>
+    <td>
+      <img src="thumb5.jpg" alt="Misc 1" onclick="openModal('video5.mp4', 'Custom Tool', 'Laser engraving a custom tool handle.')">
+      <p class="thumbnail-title">Custom Tool</p>
+    </td>
+  </tr>
+            <!-- Row 5 -->
+           <tr>
+    <td>
+      <img src="thumb1.jpg" alt="Woodworking 1" onclick="openModal('video1.mp4', 'Wood Project 1', 'Shaping the base frame using cedar and sanding tools.')">
+      <p class="thumbnail-title">Cedar Frame</p>
+    </td>
+    <td>
+      <img src="thumb2.jpg" alt="Epoxy 1" onclick="openModal('video2.mp4', 'Epoxy Pour', 'Mixing pigments and pouring into a silicone mold.')">
+      <p class="thumbnail-title">Epoxy Pour</p>
+    </td>
+    <td>
+      <img src="thumb3.jpg" alt="3D 1" onclick="openModal('video3.mp4', '3D Skull', 'Blender sculpt of a stylized skull')">
+      <p class="thumbnail-title">3D Skull Model</p>
+    </td>
+    <td>
+      <img src="thumb4.jpg" alt="Digital 1" onclick="openModal('video4.mp4', 'Album Art', 'Designing layered cover art using Procreate.')">
+      <p class="thumbnail-title">Album Art</p>
+    </td>
+    <td>
+      <img src="thumb5.jpg" alt="Misc 1" onclick="openModal('video5.mp4', 'Custom Tool', 'Laser engraving a custom tool handle.')">
+      <p class="thumbnail-title">Custom Tool</p>
+    </td>
+  </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <p>&copy; 2025 The Jack. All rights reserved.</p>
+        <p>
+          <a href="mailto:contact@thejackart.com">Email Me</a> |
+          <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> |
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+      <div class="footer-right">
+        <img src="tall logo.png" alt="The Jack Tall Logo" />
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

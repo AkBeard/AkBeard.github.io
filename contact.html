@@ -1,2 +1,102 @@
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="contact.css">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - The Jack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+
+<body class="contact-page">
+    <header>
+        <img src="main logo.png" alt="The Jack Logo" class="logo" />
+        <div class="site-title">Contact The Jack</div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="process.html">Process</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+
+    <main class="contact-main">
+        <section class="boxed-section contact-section">
+            <h2>Get in Touch</h2>
+            <p>Every project starts with a spark — a question, an idea, or a challenge. Whether you're reaching out for a commission, collaboration, or just to connect, this is where it begins.</p>
+
+            <form action="https://formspree.io/f/xblzypdv" method="POST" class="contact-form">
+                <div id="success-popup" class="success-popup">
+                <p>✅ Message sent successfully!</p>
+                <button onclick="closePopup()">Close</button>
+                </div>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="subject">What is this about?</label>
+                <select id="subject" name="subject">
+                    <option value="comment">Leave a Comment</option>
+                    <option value="commission">Request a Commission</option>
+                    <option value="question">Ask a Question</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <input type="text" name="_gotcha" style="display:none">
+
+            </form>
+
+            <!-- Social Icons -->
+      <ul class="social-icons" aria-label="Social Media Links">
+        <li>
+          <a href="https://www.tiktok.com/@beards_nest" target="_blank" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/canaidenb" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@aidenbearded" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+        </section>
+    </main>
+
+    
+ <footer>
+    <div class="footer-content">
+      <div class="footer-center">
+        <p class="copyright">&copy; 2025 The Jack. All rights reserved.</p>
+        <p>
+          <a href="#main-content" accesskey="s">Skip to main content</a> |
+          <a href="accessibility.html">Accessibility Info</a> |
+          <a href="privacy.html">Privacy Policy</a> |
+          <a href="terms.html">Terms of Service</a> |
+        </p>
+      </div>
+      <div class="footer-right">
+        <img src="tall logo.png" alt="The Jack Tall Logo" />
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
