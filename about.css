@@ -7,7 +7,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
+
 .main-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -16,7 +18,7 @@ body {
 }
 
 
-/* Layout wrapper for top section */
+/* === About Layout === */
 .about-layout {
   display: flex;
   flex-wrap: wrap;
@@ -27,10 +29,8 @@ body {
   padding: 40px;
   width: 100%;
   clear: both;
-
-  /* Background Layer */
-  background-image: 
-    linear-gradient(to left, rgba(211, 122, 20, 0.75), #13381b 80%), 
+  background-image:
+    linear-gradient(to left, rgba(211, 122, 20, 0.75), #13381b 80%),
     url(wood.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,9 +38,6 @@ body {
   background-blend-mode: multiply;
 }
 
-
-
-/* Left column for statement + bio */
 .left-column {
   flex: 1;
   display: flex;
@@ -50,22 +47,23 @@ body {
   min-width: 300px;
 }
 
-/* Right column for portrait */
 .right-column {
   flex: 3;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative; /* Make it easier to position accents if needed */
+  position: relative;
   overflow: hidden;
   max-height: 600px;
 }
+
 .photo-wrapper {
   width: 100%;
   height: 100%;
   max-height: 500px;
   overflow: hidden;
 }
+
 .hero-photo {
   max-width: 100%;
   max-height: 100%;
@@ -76,9 +74,9 @@ body {
 .signature {
   display: block;
   text-align: center;
-  margin-top: -150px;       /* pulls signature up closer */
+  margin-top: -150px;
   margin-bottom: 10px;
-  margin-left: 18%; 
+  margin-left: 18%;
   font-family: 'Passions Conflict', cursive;
   font-size: 6rem;
   color: #f2c26b;
@@ -89,39 +87,24 @@ body {
 }
 
 .wood-strip {
-  flex: 0 0 50px; 
-  background-image: url(wood.jpg); 
+  flex: 0 0 80px;
+  background-image: url(wood.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 8px;
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 
 
-/* Make it match the height of the photo */
-.about-layout {
-  align-items: stretch;
-}
-
-.right-column {
-  position: relative;
-}
-
-.wood-strip {
-  flex: 0 0 80px; /* fixed width */
-  height: auto;  /* let it stretch with content */
-}
-
-
-/* ========== Artist Statement ========== */
+/* === Artist Statement === */
 .artist-statement {
-  background-color: #77a17d; /* deep green tone */
-  color: #cdece3; /* soft teal text */
+  background-color: #77a17d;
+  color: #cdece3;
   padding: 20px 25px;
   border-radius: 10px;
-  border: 2px solid #f2c26b; 
+  border: 2px solid #f2c26b;
   font-family: 'Georgia', serif;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -130,7 +113,7 @@ body {
   font-size: 1.8rem;
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 10px;
-  color: var(--accent, #f2c26b); /* honey tone */
+  color: var(--accent, #f2c26b);
 }
 
 .artist-statement p {
@@ -139,7 +122,7 @@ body {
   font-family: 'Handlee', cursive;
 }
 
-/* ========== Artist Bio Card ========== */
+/* === Artist Bio === */
 .bio-card {
   background: #fffdf7;
   padding: 20px;
@@ -158,7 +141,7 @@ body {
   margin-bottom: 10px;
 }
 
-/* ========== Info Thumbnails ========== */
+/* === Info Thumbnails === */
 .info-thumbnails {
   display: flex;
   justify-content: space-around;
@@ -167,12 +150,11 @@ body {
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;        /* ensure it takes full width */
-  clear: both;        /* forces new row in layout flow */
+  width: 100%;
+  clear: both;
   position: relative;
   z-index: 1;
 }
-
 
 .thumb {
   background-color: #0a3a2a;
@@ -189,13 +171,35 @@ body {
 .thumb:hover {
   background-color: #114e3a;
 }
+
 section {
   display: block;
   width: 100%;
 }
 
 
-/* Responsive layout */
+/* === Footer === */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.footer-right {
+  flex: 0 0 auto;
+  text-align: right;
+}
+
+.footer-logo {
+  max-width: 120px;
+  width: 100%;
+  height: auto;
+}
+
+
+/* === Responsive Layout === */
 @media (max-width: 1000px) {
   .about-layout {
     flex-direction: column;
@@ -218,5 +222,50 @@ section {
 
   .thumb {
     width: 100%;
+  }
+
+  .signature {
+    font-size: 3.5rem;
+    margin-left: 0;
+    margin-top: -80px;
+  }
+
+  .wood-strip {
+    flex: 0 0 40px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    max-width: 100px;
+  }
+
+  .search-bar input[type="search"] {
+    width: 100%;
+    max-width: 300px;
   }
 }
