@@ -1,0 +1,180 @@
+/* === BODY & PAGE BASE STYLES === */
+body {
+  background-color: #0a3a2a;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.process-page {
+  position: relative;
+  background: url('campfire.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px 10px;
+  min-height: 100vh;
+  color: #f2c26b; /* honey tone */
+  z-index: 1;
+}
+
+/* === PAGE & SECTION TITLES === */
+.page-title,
+.section-title {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: #f2c26b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin: 60px 0 30px;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* === BOXED PARAGRAPH SECTION - Antique Paper Style === */
+.boxed-section {
+  background: url('burnedpaperdark.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 20px 30px;
+  margin: 10px auto 20px;   /* closer to navy bar */
+  width: 60%;               /* narrower */
+  max-width: 1000px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Georgia', serif;
+  color: #111;
+  line-height: 1.6;
+}
+
+.boxed-section h2 {
+  color: #0a3a2a; 
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.boxed-section p {
+  background: rgba(255, 244, 220, 0.85); /* Slightly warmer antique paper tone */
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.05rem;
+  color: #111;
+}
+
+/* === CATEGORY TITLES - with Black Underline + Outline === */
+.category-title {
+  font-size: 1.8rem;
+  color: #f2c26b; 
+  margin-bottom: 20px;
+  border-bottom: 2px solid #6ec6db;
+  padding-bottom: 10px;
+  /* black outline effect */
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/* === CATEGORY SECTION LAYOUT === */
+.category-section {
+  margin-bottom: 60px;
+  padding: 0 40px;
+}
+
+/* === VIDEO GRID & THUMBNAILS === */
+.video-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.video-thumb {
+  background: rgba(107, 44, 44, 0.6);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-thumb:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(242, 194, 107, 0.8); /* honey glow */
+  border: 2px solid #f2c26b;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #cc5c16;
+  transition: transform 0.3s;
+}
+
+/* === VIDEO TITLE BELOW THUMBNAILS - burnt orange color === */
+.video-title {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #f1d6c6; /* dark burnt orange */
+  font-family: 'Patrick Hand', cursive;
+}
+
+/* === MODAL STYLES === */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  color: #fff;
+}
+
+.modal-content video {
+  width: 100%;
+  margin-top: 20px;
+  border: 2px solid #f2c26b;
+  border-radius: 8px;
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  color: #f2c26b;
+}
+
+.modal-content p {
+  margin-top: 15px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1rem;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #f2c26b;
+}

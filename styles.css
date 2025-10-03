@@ -1,0 +1,353 @@
+:root {
+    --text: #b1c4bf;
+    --background: #0a250a;
+    --primary: #77a17d;
+    --secondary: #31525a;
+    --accent: #825253;
+    --link: #7a9ed9;
+    --title: #ffffff;
+    --header-footer: #0c1a14;
+    --outline: #e1b869;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0a250a, #07170a);
+    color: var(--text);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-footer);
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 110px;
+    width: auto;
+    order: 1;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    flex-grow: 1;
+    order: 2;
+    color: var(--accent);
+    text-shadow: -1px -1px 0 var(--outline),
+        1px -1px 0 var(--outline),
+        -1px 1px 0 var(--outline),
+        1px 1px 0 var(--outline);
+}
+
+.search-bar {
+    order: 3;
+}
+
+.search-bar input[type="search"] {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid var(--primary);
+}
+
+nav {
+    background-color: var(--secondary);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 12px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+    background-color: var(--primary);
+    color: var(--background);
+    border-radius: 6px;
+}
+
+body.home-page main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    /* remove align-items: center */
+}
+
+.center-section {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+.left-section,
+.right-section {
+    width: 25%;
+    background-color: var(--secondary);
+    border: 3px solid var(--accent);
+    padding: 20px;
+    color: var(--text);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.center-section {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-track img {
+    width: 100%;
+    height: auto;
+    flex: 0 0 auto;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    border-radius: 0;
+    box-sizing: border-box;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 0 10px;
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+.boxed-section {
+    background-color: var(--secondary);
+    border: 3px solid var(--accent);
+    padding: 20px;
+    color: var(--text);
+    border-radius: 10px;
+}
+
+.boxed-section h2 {
+    color: var(--title);
+}
+
+.right-section article p {
+    font-size: 0.9rem;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+.boxed-section {
+    padding: 15px 20px;
+}
+
+.boxed-section>*:first-child {
+    margin-top: 0;
+}
+
+.boxed-section p {
+    margin-top: 0.3em;
+    margin-bottom: 0.7em;
+}
+
+.boxed-section h2 {
+    margin-bottom: 0.3em;
+    /* reduce space below title */
+}
+
+.boxed-section p {
+    margin-top: 0.3em;
+    /* reduce space above paragraph */
+}
+
+.social-icons a,
+.blog-post a {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+.newsletter-blog {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.newsletter {
+    flex: 1;
+}
+
+.blog-post {
+    flex: 2;
+}
+
+.newsletter,
+.blog-post {
+    background-color: #3d6675;
+    color: var(--text);
+    border: 3px solid var(--accent);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.newsletter h2,
+.blog-post h2 {
+    color: var(--title);
+}
+
+.newsletter input,
+.newsletter select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border-radius: 4px;
+    border: 1px solid var(--primary);
+    background-color: #fff;
+    color: #000;
+}
+
+.newsletter button {
+    background-color: var(--primary);
+    color: #102316;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent);
+    color: var(--text);
+}
+
+footer {
+    background-color: var(--header-footer);
+    color: var(--text);
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid var(--primary);
+}
+
+footer a {
+    color: var(--link);
+    text-decoration: underline;
+}
+
+footer .copyright {
+    color: #ffffff;
+}
+
+.blog-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.blog-links a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #9ecffb;
+}
+
+.blog-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.blog-links a:hover {
+    color: var(--primary);
+}
+
+.read-more {
+    color: #9ecffb;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    color: var(--accent);
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.social-icons li a {
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.social-icons li a[aria-label="TikTok"] {
+    color: #010101;
+}
+
+.social-icons li a[aria-label="Instagram"] {
+    color: #E4405F;
+}
+
+.social-icons li a[aria-label="YouTube"] {
+    color: #FF0000;
+}
+
+.social-icons a:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+/* Thumbnail styling */
+.about-thumbnail {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.about-thumbnail img {
+    width: 100%;
+    /* keeps it responsive inside container */
+    max-width: 250px;
+    border-radius: 8px;
+    border: 2px solid var(--primary);
+}
+
+.modal {
+    display: none;
+    /* Hide modal by default */
+}

@@ -1,0 +1,206 @@
+/* about.css */
+
+/* Layout wrapper for top section */
+.about-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 90px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  width: 100%;
+  clear: both;
+
+  /* Background Layer */
+  background-image: 
+    linear-gradient(to left, rgba(211, 122, 20, 0.75), #13381b 80%), 
+    url(wood.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-blend-mode: multiply;
+}
+
+
+
+/* Left column for statement + bio */
+.left-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  min-width: 300px;
+}
+
+/* Right column for portrait */
+.right-column {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Make it easier to position accents if needed */
+  overflow: hidden;
+  max-height: 600px;
+}
+.photo-wrapper {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+.hero-photo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.signature {
+  display: block;
+  text-align: center;
+  margin-top: -150px;       /* pulls signature up closer */
+  margin-bottom: 10px;
+  margin-left: 18%; 
+  font-family: 'Passions Conflict', cursive;
+  font-size: 6rem;
+  color: #f2c26b;
+  letter-spacing: 2px;
+  opacity: 0.95;
+  position: relative;
+  z-index: 2;
+}
+
+.wood-strip {
+  flex: 0 0 50px; 
+  background-image: url(wood.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 8px;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+  margin-left: 10px; 
+}
+
+
+/* Make it match the height of the photo */
+.about-layout {
+  align-items: stretch;
+}
+
+.right-column {
+  position: relative;
+}
+
+.wood-strip {
+  flex: 0 0 80px; /* fixed width */
+  height: auto;  /* let it stretch with content */
+}
+
+
+/* ========== Artist Statement ========== */
+.artist-statement {
+  background-color: #77a17d; /* deep green tone */
+  color: #cdece3; /* soft teal text */
+  padding: 20px 25px;
+  border-radius: 10px;
+  border: 2px solid #f2c26b; 
+  font-family: 'Georgia', serif;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.artist-statement h2 {
+  font-size: 1.8rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 10px;
+  color: var(--accent, #f2c26b); /* honey tone */
+}
+
+.artist-statement p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-family: 'Handlee', cursive;
+}
+
+/* ========== Artist Bio Card ========== */
+.bio-card {
+  background: #fffdf7;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 5px solid var(--accent, #f2c26b);
+  font-family: 'Patrick Hand', cursive;
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio-title {
+  font-family: 'Orbitron', sans-serif;
+  color: #0a3a2a;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+/* ========== Info Thumbnails ========== */
+.info-thumbnails {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;        /* ensure it takes full width */
+  clear: both;        /* forces new row in layout flow */
+  position: relative;
+  z-index: 1;
+}
+
+
+.thumb {
+  background-color: #0a3a2a;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex: 1 1 30%;
+  text-align: center;
+  transition: background 0.3s ease;
+  border: 2px solid var(--accent, #f2c26b);
+}
+
+.thumb:hover {
+  background-color: #114e3a;
+}
+section {
+  display: block;
+  width: 100%;
+}
+
+
+/* Responsive layout */
+@media (max-width: 1000px) {
+  .about-layout {
+    flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
+
+  .hero-photo {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .info-thumbnails {
+    flex-direction: column;
+  }
+
+  .thumb {
+    width: 100%;
+  }
+}
