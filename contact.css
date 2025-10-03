@@ -7,6 +7,22 @@ body.contact-page {
   margin: 0;
   padding: 0;
 }
+/* === Fluid Typography and Layout Scaling === */
+html {
+  font-size: clamp(14px, 1.5vw, 18px);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+}
 
 /* === Contact Section Container === */
 .contact-section {
