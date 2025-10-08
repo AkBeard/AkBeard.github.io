@@ -110,7 +110,7 @@ body {
 }
 
 .artist-statement h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 10px;
   color: var(--accent, #f2c26b);
@@ -118,8 +118,8 @@ body {
 
 .artist-statement p {
   font-size: 1.1rem;
-  line-height: 1.6;
-  font-family: 'Handlee', cursive;
+  line-height: 1.25;
+  font-family: 'Overpass', sans-serif;
 }
 
 /* === Artist Bio === */
@@ -128,8 +128,8 @@ body {
   padding: 20px;
   border-radius: 10px;
   border-left: 5px solid var(--accent, #f2c26b);
-  font-family: 'Patrick Hand', cursive;
-  font-size: 1.1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem;
   color: #1a1a1a;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -177,7 +177,6 @@ section {
   width: 100%;
 }
 
-
 /* === Footer === */
 .footer-content {
   display: flex;
@@ -197,7 +196,6 @@ section {
   width: 100%;
   height: auto;
 }
-
 
 /* === Responsive Layout === */
 @media (max-width: 1000px) {
