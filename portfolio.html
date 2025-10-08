@@ -14,6 +14,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        /* Modal Styles */
+        .image-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .image-modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+            border: 3px solid #fff;
+            box-shadow: 0 0 20px #fff;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 30px;
+            right: 50px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .close-modal:hover {
+            color: #bbb;
+        }
+
+        .thumbnail-title {
+            text-align: center;
+            margin-top: 5px;
+            font-family: 'Patrick Hand', cursive;
+        }
+    </style>
 </head>
 
 <body class="portfolio-page">
@@ -41,7 +86,9 @@
             <section class="boxed-section">
                 <h2>Portfolio Gallery</h2>
                 <p>
-                    This gallery brings together The Jack's completed works — Click around. Get inspired. And maybe walk away with paint on your hands or an idea that won’t leave you alone until you yourself get your hands dirty.
+                    This gallery brings together The Jack's completed works — Click around. Get inspired. And maybe walk
+                    away with paint on your hands or an idea that won’t leave you alone until you yourself get your
+                    hands dirty.
                 </p>
 
 
@@ -57,168 +104,169 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!-- Row 1 -->
-                            <tr>
-                                <td>
-                                    <img src="epoxycuttingboard.JPG" alt="Woodworking 1"
-                                        onclick="openModal('video1.mp4', 'Wood Project 1', 'torched weathered Acacia wood and ocean inspired epoxy cutting board.')">
-                                    <p class="thumbnail-title">Acacia Epoxy Cutting Board</p>
-                                </td>
-                                <td>
-                                    <img src="candle.JPEG" alt="drawing 1"
-                                        onclick="openModal('video2.mp4', 'Doodles', 'Just a couple of doodles.')">
-                                    <p class="thumbnail-title">Doodles</p>
-                                </td>
-                                <td>
-                                    <img src="two faced giraffe.JPEG" alt="3D 1"
-                                        onclick="openModal('video3.mp4', '3D Skull', 'Blender sculpt of a stylized skull')">
-                                    <p class="thumbnail-title">3D Skull Model</p>
-                                </td>
-                                <td>
-                                    <img src="basket.JPEG" alt="Painting"
-                                        onclick="openModal('video4.mp4', 'Album Art', 'Designing layered cover art using Procreate.')">
-                                    <p class="thumbnail-title">Album Art</p>
-                                </td>
-                                <td>
-                                    <img src="fatherhood.JPEG" alt="Digital"
-                                        onclick="openModal('video5.mp4', 'fatherhood', '3D rendered coffee pot marketing project.')">
-                                    <p class="thumbnail-title">fatherhood</p>
-                                </td>
-                            </tr>
-                            <!-- Row 2 -->
-                            <tr>
-                                <td>
-                                    <img src="epoxyendtable.JPEG" alt="Woodworking 1"
-                                        onclick="openModal('video1.mp4', 'Wood Project 1', 'Starry Night inspired epoxy end table with swirling galaxy patterns and torched cedar wood.')">
-                                    <p class="thumbnail-title">Starry Night End Table</p>
-                                </td>
-                                <td>
-                                    <img src="fish.JPEG" alt="drawing"
-                                        onclick="openModal('video2.mp4', 'Epoxy Pour', 'Using sharpies and colored pencils, Heres to keepin it salty.')">
-                                    <p class="thumbnail-title">Stay Salty</p>
-                                </td>
-                                <td>
-                                    <img src="foxy.JPEG" alt="3D 1"
-                                        onclick="openModal('video3.mp4', '3D Skull', 'Blender sculpt of a stylized skull')">
-                                    <p class="thumbnail-title">3D Skull Model</p>
-                                </td>
-                                <td>
-                                    <img src="splatter paint.jpg" alt="Digital 1"
-                                        onclick="openModal('video4.mp4', 'Album Art', 'Designing layered cover art using Procreate.')">
-                                    <p class="thumbnail-title">Album Art</p>
-                                </td>
-                                <td>
-                                    <img src="area 51.JPEG" alt="Misc 1"
-                                        onclick="openModal('video5.mp4', 'Custom Tool', 'Laser engraving a custom tool handle.')">
-                                    <p class="thumbnail-title">Custom Tool</p>
-                                </td>
-                            </tr>
-                            <!-- Row 3 -->
-                            <tr>
-                                <td>
-                                    <img src="painted skateboard.JPEG" alt="Woodworking 1"
-                                        onclick="openModal('video1.mp4', 'Wood Project 1', 'Shaping the base frame using cedar and sanding tools.')">
-                                    <p class="thumbnail-title">Spray painted and pigment dusted mini cruiser</p>
-                                </td>
-                                <td>
-                                    <img src="freud piece.jpg" alt="drawing 1"
-                                        onclick="openModal('video2.mp4', 'Freud Concept', 'Mixing concepts of freud into an artistic medium.')">
-                                    <p class="thumbnail-title">Freud Concept</p>
-                                </td>
-                                <td>
-                                    <img src="berry happy.JPEG" alt="sewing"
-                                        onclick="openModal('video3.mp4', '3D Skull', 'Blender sculpt of a stylized skull')">
-                                    <p class="thumbnail-title">3D Skull Model</p>
-                                </td>
-                                <td>
-                                    <img src="stranger things.JPEG" alt="painting"
-                                        onclick="openModal('video4.mp4', 'Album Art', 'Designing layered cover art using Procreate.')">
-                                    <p class="thumbnail-title">Album Art</p>
-                                </td>
-                                <td>
-                                    <img src="rollerskate photo.jpg" alt="Digital"
-                                        onclick="openModal('video5.mp4', 'Custom Tool', 'Laser engraving a custom tool handle.')">
-                                    <p class="thumbnail-title">Custom Tool</p>
-                                </td>
-                            </tr>
-                            <!-- Row 4 -->
-                            <tr>
-                                <td>
-                                    <img src="epoxy plank.jpg" alt="Woodworking 1"
-                                        onclick="openModal('video1.mp4', 'Wood Project 1', 'Shaping the base frame using cedar and sanding tools.')">
-                                    <p class="thumbnail-title">Cedar Frame</p>
-                                </td>
-                                <td>
-                                    <img src="tatgun.JPEG" alt="Epoxy 1"
-                                        onclick="openModal('video2.mp4', 'Epoxy Pour', 'Mixing pigments and pouring into a silicone mold.')">
-                                    <p class="thumbnail-title">Epoxy Pour</p>
-                                </td>
-                                <td>
-                                    <img src="baby bomber.JPEG" alt="3D 1"
-                                        onclick="openModal('video3.mp4', '3D Skull', 'Blender sculpt of a stylized skull')">
-                                    <p class="thumbnail-title">3D Skull Model</p>
-                                </td>
-                                <td>
-                                    <img src="dirty pour.jpg" alt="Digital 1"
-                                        onclick="openModal('video4.mp4', 'Album Art', 'Designing layered cover art using Procreate.')">
-                                    <p class="thumbnail-title">Album Art</p>
-                                </td>
-                                <td>
-                                    <img src="bfast.JPEG" alt="Misc 1"
-                                        onclick="openModal('video5.mp4', 'Custom Tool', 'Laser engraving a custom tool handle.')">
-                                    <p class="thumbnail-title">Custom Tool</p>
-                                </td>
-                            </tr>
-                            <!-- Row 5 -->
-                            <tr>
-                                <td>
-                                    <img src="voodoo.JPEG" alt="Woodworking 1"
-                                        onclick="openModal('video1.mp4', 'Wood Project 1', 'Shaping the base frame using cedar and sanding tools.')">
-                                    <p class="thumbnail-title">Cedar Frame</p>
-                                </td>
-                                <td>
-                                    <img src="fox.JPG" alt="Epoxy 1"
-                                        onclick="openModal('video2.mp4', 'Epoxy Pour', 'Mixing pigments and pouring into a silicone mold.')">
-                                    <p class="thumbnail-title">Epoxy Pour</p>
-                                </td>
-                                <td>
-                                    <img src="orca.JPEG" alt="3D 1"
-                                        onclick="openModal('video3.mp4', '3D Skull', 'Blender sculpt of a stylized skull')">
-                                    <p class="thumbnail-title">3D Skull Model</p>
-                                </td>
-                                <td>
-                                    <img src="meltdown.jpeg" alt="Digital 1"
-                                        onclick="openModal('video4.mp4', 'Album Art', 'Designing layered cover art using Procreate.')">
-                                    <p class="thumbnail-title">Album Art</p>
-                                </td>
-                                <td>
-                                    <img src="the 90s.JPEG" alt="Misc 1"
-                                        onclick="openModal('video5.mp4', 'Custom Tool', 'Laser engraving a custom tool handle.')">
-                                    <p class="thumbnail-title">Custom Tool</p>
-                                </td>
-                            </tr>
-                        </tbody>
+  <!-- Row 1 -->
+  <tr>
+    <td>
+      <img src="epoxycuttingboard.JPG" alt="Acacia Epoxy Cutting Board" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Acacia Epoxy Cutting Board</p>
+    </td>
+    <td>
+      <img src="candle.JPEG" alt="Doodles" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Doodles</p>
+    </td>
+    <td>
+      <img src="two faced giraffe.JPEG" alt="3D Skull Model" onclick="openImageModal(this)">
+      <p class="thumbnail-title">3D Skull Model</p>
+    </td>
+    <td>
+      <img src="basket.JPEG" alt="Album Art" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Album Art</p>
+    </td>
+    <td>
+      <img src="fatherhood.JPEG" alt="Fatherhood" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Fatherhood</p>
+    </td>
+  </tr>
+
+  <!-- Row 2 -->
+  <tr>
+    <td>
+      <img src="epoxyendtable.JPEG" alt="Starry Night End Table" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Starry Night End Table</p>
+    </td>
+    <td>
+      <img src="fish.JPEG" alt="Stay Salty" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Stay Salty</p>
+    </td>
+    <td>
+      <img src="foxy.JPEG" alt="3D Skull Model" onclick="openImageModal(this)">
+      <p class="thumbnail-title">3D Skull Model</p>
+    </td>
+    <td>
+      <img src="splatter paint.jpg" alt="Album Art" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Album Art</p>
+    </td>
+    <td>
+      <img src="area 51.JPEG" alt="Custom Tool" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Custom Tool</p>
+    </td>
+  </tr>
+
+  <!-- Row 3 -->
+  <tr>
+    <td>
+      <img src="painted skateboard.JPEG" alt="Spray Painted Mini Cruiser" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Spray painted and pigment dusted mini cruiser</p>
+    </td>
+    <td>
+      <img src="freud piece.jpg" alt="Freud Concept" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Freud Concept</p>
+    </td>
+    <td>
+      <img src="berry happy.JPEG" alt="3D Skull Model" onclick="openImageModal(this)">
+      <p class="thumbnail-title">3D Skull Model</p>
+    </td>
+    <td>
+      <img src="stranger things.JPEG" alt="Album Art" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Album Art</p>
+    </td>
+    <td>
+      <img src="rollerskate photo.jpg" alt="Custom Tool" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Custom Tool</p>
+    </td>
+  </tr>
+
+  <!-- Row 4 -->
+  <tr>
+    <td>
+      <img src="epoxy plank.jpg" alt="Cedar Frame" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Cedar Frame</p>
+    </td>
+    <td>
+      <img src="tatgun.JPEG" alt="Epoxy Pour" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Epoxy Pour</p>
+    </td>
+    <td>
+      <img src="baby bomber.JPEG" alt="3D Skull Model" onclick="openImageModal(this)">
+      <p class="thumbnail-title">3D Skull Model</p>
+    </td>
+    <td>
+      <img src="dirty pour.jpg" alt="Album Art" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Album Art</p>
+    </td>
+    <td>
+      <img src="bfast.JPEG" alt="Custom Tool" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Custom Tool</p>
+    </td>
+  </tr>
+
+  <!-- Row 5 -->
+  <tr>
+    <td>
+      <img src="voodoo.JPEG" alt="Cedar Frame" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Cedar Frame</p>
+    </td>
+    <td>
+      <img src="fox.JPG" alt="Epoxy Pour" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Epoxy Pour</p>
+    </td>
+    <td>
+      <img src="orca.JPEG" alt="3D Skull Model" onclick="openImageModal(this)">
+      <p class="thumbnail-title">3D Skull Model</p>
+    </td>
+    <td>
+      <img src="meltdown.jpeg" alt="Album Art" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Album Art</p>
+    </td>
+    <td>
+      <img src="the 90s.JPEG" alt="Custom Tool" onclick="openImageModal(this)">
+      <p class="thumbnail-title">Custom Tool</p>
+    </td>
+  </tr>
+</tbody>
+
                     </table>
                 </div>
             </section>
         </main>
-
+        <div id="imageModal" class="image-modal" onclick="closeImageModal(event)">
+            <span class="close-modal" onclick="closeImageModal(event)">&times;</span>
+            <img class="image-modal-content" id="modalImage">
+        </div>
         <footer>
-            <div class="footer-content">
-                <div class="footer-left">
-                    <p>&copy; 2025 The Jack. All rights reserved.</p>
-                    <p>
-                        <a href="mailto:contact@thejackart.com">Email Me</a> |
-                        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> |
-                        <a href="contact.html">Contact</a>
-                    </p>
-                </div>
-                <div class="footer-right">
-                    <img src="tall logo.png" alt="The Jack Tall Logo" class="footer-logo" />
-                </div>
-            </div>
-        </footer>
+      <div class="footer-content">
+        <div class="footer-left">
+          <p class="copyright">&copy; 2025 The Jack. All rights reserved.</p>
+          <p>
+            <a href="#main-content" accesskey="s">Skip to main content</a> |
+            <a href="accessibility.html">Accessibility Info</a> |
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms of Service</a> |
+            <a href="contact.html">Contact</a>
+          </p>
+        </div>
+        <div class="footer-right">
+          <img src="tall logo.png" alt="The Jack Tall Logo" class="footer-logo" />
+        </div>
+      </div>
+    </footer>
     </div>
+    <script>
+        function openImageModal(img) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImage");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            modalImg.alt = img.alt;
+        }
+
+        function closeImageModal(event) {
+            const modal = document.getElementById("imageModal");
+            if (event.target.className === "image-modal" || event.target.className === "close-modal") {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 
 </html>
