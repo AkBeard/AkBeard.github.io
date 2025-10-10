@@ -62,8 +62,8 @@ body {
   background-size: cover;
   padding: 20px 30px;
   margin: 10px auto 20px;
-  /* closer to navy bar */
-  width: 60%;
+  /* closer to nav bar */
+  width: 90%;
   /* narrower */
   max-width: 1000px;
   border-radius: 10px;
@@ -83,7 +83,7 @@ body {
 .boxed-section p {
   background: rgba(255, 244, 220, 0.85);
   /* Slightly warmer antique paper tone */
-  padding: 8px 12px;
+  padding: 8px px;
   border-radius: 6px;
   margin-bottom: 15px;
   font-family: 'Patrick Hand', cursive;
