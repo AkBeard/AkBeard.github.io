@@ -1,155 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="About the Artist - The Jack" />
-  <meta name="author" content="The Jack" />
-  <title>About The Jack</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="About the Artist - The Jack" />
+    <meta name="author" content="The Jack" />
+    <title>About The Jack</title>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Handlee&family=Indie+Flower&family=Patrick+Hand&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Handlee&family=Indie+Flower&family=Patrick+Hand&display=swap"
+        rel="stylesheet" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="about.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
 
-  <!-- WRAPPER FOR WHOLE PAGE -->
-  <div class="page-wrapper">
+    <!-- WRAPPER FOR WHOLE PAGE -->
+    <div class="page-wrapper">
 
-    <!-- HEADER -->
-    <header>
-  <img src="main logo.png" alt="The Jack Logo" class="logo" />
-  <div class="site-title">About The Jack</div>
-  <div class="search-bar">
-    <form action="#" method="get" role="search">
-      <label for="site-search" class="visually-hidden">Search the site:</label>
-      <input type="search" id="site-search" name="q" placeholder="Search..." />
-    </form>
-  </div>
-</header>
+        <!-- HEADER -->
+        <header>
+            <img src="main logo.png" alt="The Jack Logo" class="logo" />
+            <div class="site-title">About The Jack</div>
+            <div class="search-bar">
+                <form action="#" method="get" role="search">
+                    <label for="site-search" class="visually-hidden">Search the site:</label>
+                    <input type="search" id="site-search" name="q" placeholder="Search..." />
+                </form>
+            </div>
+        </header>
 
 
-    <!-- NAVIGATION -->
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html" aria-current="page">About</a>
-      <a href="process.html">Process</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <!-- MAIN CONTENT -->
-    <main>
-
-      <!-- ABOUT LAYOUT -->
-      <section class="about-layout">
-        <div class="left-column">
-          <div class="artist-statement">
-            <h2>Where there is friction, there is fire.</h2>
-            <p>I am The Jack — a renegade craftsman, an alchemist of materials, a shapeshifter in the studio.</p>
-          </div>
-
-          <div class="bio-card">
-            <h3 class="bio-title">Artist Bio</h3>
-            <p>
-              Born from paint-stained hands, soldering burns, and the hum of too many creative experiments at once,
-              The Jack is not just a name — it's a manifesto. Aiden Beard is a self-taught, detail-driven artist who builds beautiful things from whatever's available. With hands that have touched everything from glass to graphite to epoxy and digital design, Aiden’s practice is defined by experimentation, resilience, and raw creativity.
-Aiden Beard is a multidisciplinary artist and designer pursuing a degree in Media Arts and Sciences with a focus on graphic design. His work spans hand-drawn pieces, digital design, wood and epoxy, and custom commissions. The result is an ever-evolving portfolio shaped by curiosity and necessity, with a creative process that often begins with what’s available—and ends with something unforgettable.
-Every project, from client commissions to personal experiments, is approached with thoughtful intention and a drive for lasting impact. Aiden’s strengths lie in creative problem-solving, attention to fine detail, and the ability to turn even modest materials into pieces that resonate.
-            </p>
-          </div>
-        </div>
-
-        <div class="right-column">
-          <div class="photo-wrapper">
-            <img src="about me photo.jpeg" alt="Artist Portrait" class="hero-photo" />
-          </div>
-        </div>
-        <div class="wood-strip"></div>
-      </section>
-
-      <div class="signature">Aiden Beard</div>
-
-      <!-- INFO THUMBNAILS -->
-      <section class="info-thumbnails">
-        <div class="thumb" onclick="openModal('jack')">
-          <h4>What is The Jack?</h4>
-        </div>
-        <div class="thumb" onclick="openModal('concept')">
-          <h4>Concept & Collaboration</h4>
-        </div>
-        <div class="thumb" onclick="openModal('name')">
-          <h4>Why “The Jack”?</h4>
-        </div>
-      </section>
-    </main>
-
-    <!-- MODAL -->
-    <div id="modal" class="modal" style="display:none;">
-      <div class="modal-content">
-        <span id="closeModal" class="close">&times;</span>
-        <div id="modalText"></div>
-      </div>
-    </div>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="footer-content">
-        <div class="footer-left">
-          <p class="copyright">&copy; 2025 The Jack. All rights reserved.</p>
-          <p>
-            <a href="#main-content" accesskey="s">Skip to main content</a> |
-            <a href="accessibility.html">Accessibility Info</a> |
-            <a href="privacy.html">Privacy Policy</a> |
-            <a href="terms.html">Terms of Service</a> |
+        <!-- NAVIGATION -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html" aria-current="page">About</a>
+            <a href="process.html">Process</a>
+            <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
-          </p>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <main>
+
+            <!-- ABOUT LAYOUT -->
+            <section class="about-layout">
+                <div class="left-column">
+                    <div class="artist-statement">
+                        <h2>Where there is friction, there is fire.</h2>
+                        <p>I am The Jack — a renegade craftsman, an alchemist of materials, a shapeshifter in the
+                            studio.</p>
+                    </div>
+
+                    <div class="bio-card">
+                        <h3 class="bio-title">Artist Bio</h3>
+                        <p>
+                            Born from paint-stained hands, torch burns, many slivers, and the hum of too many creative
+                            experiments at once,
+                            <em>The Jack</em> is not just a name, it's a manifesto. Aiden Beard is a self-taught,
+                            detail-driven artist who builds beautiful things from whatever's available. With hands that
+                            have touched everything from glass to graphite to epoxy and digital design, Aiden’s practice
+                            is defined by experimentation, resilience, and raw creativity.
+                            Aiden Beard is a multidisciplinary artist and designer pursuing a degree in Media Arts and
+                            Sciences with a focus on graphic design and animation. His work spans hand-drawn pieces,
+                            digital design, wood and epoxy, and custom commissions. The result is an ever-evolving
+                            portfolio shaped by curiosity and the necessity to create, with a creative process that
+                            often begins with what’s available and ends with something unforgettable.
+                            Every project, from client commissions to personal experiments, is approached with
+                            thoughtful intention and a drive for lasting impact. Aiden’s strengths lie in creative
+                            problem-solving, attention to fine detail, and the ability to turn even modest materials
+                            into pieces that resonate.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="photo-wrapper">
+                        <img src="about me photo.jpeg" alt="Artist Portrait" class="hero-photo" />
+                    </div>
+                </div>
+                <div class="wood-strip"></div>
+            </section>
+
+            <div class="signature">Aiden Beard</div>
+
+            <!-- INFO THUMBNAILS -->
+            <section class="info-thumbnails">
+                <div class="thumb" onclick="openModal('jack')">
+                    <h4>What is The Jack?</h4>
+                </div>
+                <div class="thumb" onclick="openModal('concept')">
+                    <h4>Concept & Collaboration</h4>
+                </div>
+                <div class="thumb" onclick="openModal('name')">
+                    <h4>Why “The Jack”?</h4>
+                </div>
+            </section>
+        </main>
+
+        <!-- MODAL -->
+        <div id="modal" class="modal" style="display:none;">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <div id="modalText"></div>
+            </div>
         </div>
-        <div class="footer-right">
-          <img src="tall logo.png" alt="The Jack Tall Logo" class="footer-logo" />
-        </div>
-      </div>
-    </footer>
 
-  </div> <!-- /page-wrapper -->
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p class="copyright">&copy; 2025 The Jack. All rights reserved.</p>
+                    <p>
+                        <a href="#main-content" accesskey="s">Skip to main content</a> |
+                        <a href="accessibility.html">Accessibility Info</a> |
+                        <a href="privacy.html">Privacy Policy</a> |
+                        <a href="terms.html">Terms of Service</a> |
+                        <a href="contact.html">Contact</a>
+                    </p>
+                </div>
+                <div class="footer-right">
+                    <img src="tall logo.png" alt="The Jack Tall Logo" class="footer-logo" />
+                </div>
+            </div>
+        </footer>
 
-  <!-- Modal Script -->
-  <script>
-    const modal = document.getElementById("modal");
-    const modalText = document.getElementById("modalText");
-    const closeModal = document.getElementById("closeModal");
+    </div> <!-- /page-wrapper -->
 
-    function openModal(type) {
-      let content = "";
+    <!-- Modal Script -->
+    <script>
+        const modal = document.getElementById("modal");
+        const modalText = document.getElementById("modalText");
+        const closeModal = document.getElementById("closeModal");
 
-      if (type === 'jack') {
-        content = "<h3>What is The Jack?</h3><p>The Jack is a multidisciplinary identity — part artist, part maker, part mad scientist. It’s a home for ideas too wild for one medium alone. To be The Jack is to be dedicated, resourceful, and a little relentless. Because when the vision is clear, the materials don’t matter—you’ll figure out how to make it work.</p>";
-      } else if (type === 'concept') {
-        content = "<h3>Concept & Collaboration</h3><p>This space isn’t just a portfolio. It’s a launchpad. Collaborations, commissions, and future retail projects all live here — or are on their way. If you’ve got a concept, a commission idea, or a wild project—let’s make it happen.</p>";
-      } else if (type === 'name') {
-        content = "<h3>Why “The Jack”?</h3><p>Because a jack of all trades isn’t a weakness here. It’s the whole point. Every tool, every material, every mistake — it’s all part of the practice. “The Jack” is short for jack of all trades—but I’ve learned that being a jack is a strength, not a shortcoming. I don’t want to fit into one label, one medium, or one kind of work. I like having my hands in everything. I like the challenge of learning as I go. It means the work is always different and so is the process getting to the final result. It means if I haven’t done it yet, I probably will soon. I create from instinct, impulse, and whatever I can get my hands on. Every piece is a mix of chaos, control, and creative adventure. If it doesn’t make you feel something, it’s not finished.</p>";
-      }
+        function openModal(type) {
+            let content = "";
 
-      modalText.innerHTML = content;
-      modal.style.display = "flex";
-    }
+            if (type === 'jack') {
+                content = "<h3>What is The Jack?</h3><p>The Jack is a multidisciplinary identity — part artist, part maker, part mad scientist. It’s a home for ideas too wild for one medium alone. To be The Jack is to be dedicated, resourceful, and a little relentless. Because when the vision is clear, the materials don’t matter—you’ll figure out how to make it work.</p>";
+            } else if (type === 'concept') {
+                content = "<h3>Concept & Collaboration</h3><p>This space isn’t just a portfolio. It’s a launchpad. Collaborations, commissions, and future retail projects all live here — or are on their way. If you’ve got a concept, a commission idea, or a wild project—let’s make it happen.</p>";
+            } else if (type === 'name') {
+                content = "<h3>Why “The Jack”?</h3><p>Because a jack of all trades isn’t a weakness here. It’s the whole point. Every tool, every material, every mistake - it’s all part of the practice. “The Jack” is short for jack of all trades, but I’ve learned that being a jack is a strength, not a shortcoming. I don’t want to fit into one label, one medium, or one kind of work. I like having my hands in everything. I like the challenge of learning as I go. It means the work is always different and so is the process getting to the final result. It means if I haven’t done it yet, I probably will soon. I create from instinct, impulse, and whatever I can get my hands on. Every piece is a mix of chaos, control, and creative adventure. If it doesn’t make you feel something, it’s not finished.</p>";
+            }
 
-    closeModal.addEventListener("click", () => {
-      modal.style.display = "none";
-    });
+            modalText.innerHTML = content;
+            modal.style.display = "flex";
+        }
 
-    window.addEventListener("click", (e) => {
-      if (e.target === modal) {
-        modal.style.display = "none";
-      }
-    });
-  </script>
+        closeModal.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
 
 </body>
+
 </html>

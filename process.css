@@ -127,6 +127,7 @@ body {
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .video-thumb video {
   width: 180px;
   height: 120px;
@@ -136,6 +137,7 @@ body {
   transition: transform 0.3s;
   display: block;
 }
+
 .video-thumb:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(242, 194, 107, 0.8);

@@ -75,6 +75,7 @@ body {
 
 .portfolio-table {
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
     text-align: center;
     backdrop-filter: blur(4px);
@@ -93,6 +94,14 @@ body {
     /* transparent blue/gray */
     padding: 10px;
     border: 2px solid #000;
+}
+
+.portfolio-table th,
+.portfolio-table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
 }
 
 .portfolio-table img {
